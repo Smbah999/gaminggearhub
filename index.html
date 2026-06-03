@@ -30,9 +30,32 @@ line-height:1.7;
 }
 
 header{
-padding:70px 20px;
+padding:80px 30px;
 text-align:center;
-background:#161616;
+background:linear-gradient(
+135deg,
+#0f172a,
+#111827,
+#000000
+);
+border-radius:20px;
+margin:20px;
+position:relative;
+overflow:hidden;
+}
+header::before{
+content:"";
+position:absolute;
+width:500px;
+height:500px;
+background:radial-gradient(
+circle,
+rgba(0,255,120,.12),
+transparent 70%
+);
+top:-250px;
+right:-150px;
+pointer-events:none;
 }
 
 header h1{
@@ -149,6 +172,25 @@ padding:40px;
 color:#888;
 }
 
+.badges{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.badge{
+background:rgba(0,200,83,.15);
+border:1px solid rgba(0,200,83,.4);
+backdrop-filter:blur(8px);
+padding:8px 14px;
+border-radius:999px;
+font-size:14px;
+font-weight:bold;
+color:#8cffb3;
+}
+
 @media(max-width:768px){
 
 header h1{
@@ -174,6 +216,12 @@ height:240px;
 <p>
 Sedang mencari keyboard Rapid Trigger terbaik untuk Valorant, Counter Strike 2, Apex Legends, atau game FPS lainnya? Berikut pilihan keyboard Hall Effect terbaik yang menawarkan Magnetic Switch, Rapid Trigger, dan performa kompetitif.
 </p>
+
+<div class="badges">
+<span class="badge">🎯 Valorant</span>
+<span class="badge">⚡ Rapid Trigger</span>
+<span class="badge">🔥 Hall Effect</span>
+</div>
 
 </header>
 
